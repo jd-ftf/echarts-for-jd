@@ -1,0 +1,6 @@
+<!--index.jxml-->
+<view class="container">
+  <button bindtap="init" jd:if="{{!isLoaded}}">加载图表</button>
+  <button bindtap="dispose" jd:if="{{isLoaded && !isDisposed}}">释放图表</button>
+  <ec-canvas jd:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>

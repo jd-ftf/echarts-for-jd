@@ -1,0 +1,5 @@
+<!--index.jxml-->
+<view class="container">
+  measureText: {{ value }} 
+  <canvas canvas-id="measure" id="measure"></canvas>
+</view>
